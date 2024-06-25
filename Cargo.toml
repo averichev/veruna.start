@@ -1,0 +1,3 @@
+[workspace]
+members = ["app", "domain", "server", "template_renderer"]
+resolver = "2"
