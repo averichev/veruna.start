@@ -6,7 +6,7 @@ pub struct TemplateRenderer {
 
 impl TemplateRenderer {
     pub fn new() -> TemplateRenderer {
-        let mut tera = match Tera::new("./templates/**/*.html.twig") {
+        let mut tera = match Tera::new("./**/*.html.twig") {
             Ok(t) => t,
             Err(e) => {
                 println!("Parsing error(s): {}", e);
